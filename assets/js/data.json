@@ -1,0 +1,72 @@
+[
+    {
+        "id": 1,
+        "nom": "Potion d'Invisibilité Pailletée",
+        "prix": 42.99,
+        "description": "Deviens invisible… mais seulement si personne ne te regarde. Contient 87% de paillettes.",
+        "img": "Potion.png"
+    },
+    {
+        "id": 2,
+        "nom": "Attrape-Arc-en-Ciel de Poche",
+        "prix": 15.00,
+        "description": "Capture les arcs-en-ciel pour les relâcher dans ta chambre quand tu es triste.",
+        "img": "Attrape-Arc-en-Ciel.png"
+    },
+    {
+        "id": 3,
+        "nom": "Cornomètre Universel",
+        "prix": 27.89,
+        "description": "Mesure le niveau de magie autour de toi en secouant une corne lumineuse.",
+        "img": "Cornomètre.png"
+    },
+    {
+        "id": 4,
+        "nom": "Bonbon qui te fait parler licorne",
+        "prix": 4.44,
+        "description": "Tu dis 'bonjour', ça sort 'glitter-glouglou'. Durée : 5 minutes de rire garanti.",
+        "img": "Bonbon.png"
+    },
+    {
+        "id": 5,
+        "nom": "Pluie de Câlins Automatique",
+        "prix": 33.33,
+        "description": "Un petit nuage qui flotte au-dessus de toi et te fait des câlins quand tu es triste.",
+        "img": "Câlins.png"
+    },
+    {
+        "id": 6,
+        "nom": "Chaussures Nuage Dansant",
+        "prix": 69.00,
+        "description": "Te font danser même quand tu ne veux pas. Flottent légèrement au-dessus du sol.",
+        "img": "Chaussures.png"
+    },
+    {
+        "id": 7,
+        "nom": "Crottes de Licorne Explosives (inoffensives)",
+        "prix": 6.66,
+        "description": "Elles explosent en confettis et sentent la barbe à papa. 100% biodégradables.",
+        "img": "Crottes.png"
+    },
+    {
+        "id": 8,
+        "nom": "Oreiller Téléporteur de Rêves",
+        "prix": 54.21,
+        "description": "Pose ta tête dessus, choisis ton rêve. Un voyage garanti dans un monde arc-en-ciel.",
+        "img": "Oreiller.png"
+    },
+    {
+        "id": 9,
+        "nom": "Lunettes à Voir les Bisous Inexistants",
+        "prix": 13.13,
+        "description": "Révèlent les bisous perdus dans l'air. Attention à ne pas rougir.",
+        "img": "Lunettes.png"
+    },
+    {
+        "id": 10,
+        "nom": "Machine à Miauler en Licorne",
+        "prix": 99.99,
+        "description": "Transforme chaque miaulement de chat en 'Licorrrneeee'. Ton chat va te juger.",
+        "img": "Machine.png"
+    }
+]

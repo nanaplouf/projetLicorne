@@ -1,0 +1,17 @@
+body{
+    background-image: url("/assets/img/bg2.jpeg");
+    background-size: cover;
+}
+
+footer{
+    background-color: rgba(248, 245, 245, 0.84);
+    height: 50px;
+    padding-top: 20px;
+    margin-top: 50px;
+}
+
+footer p {
+    text-align: center;
+    font-style: italic;
+    font-size: 15px;
+}
