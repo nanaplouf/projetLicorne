@@ -24,14 +24,34 @@ async function load(){
         // On appelle listObject() pour récupérer les objets à partir du fichier JSON
         const OBJETS = await listObjet();
 
-        // On récupère le conteneur HTML où on veut afficher les cartes
         const MAIN = document.getElementById("main");
 
-        //forEach() -> console.log(item);
+        OBJETS.forEach(function (objet) {
+            console.log(objet);
+
+            /*
+            Exemple :
+
+            let h2 = document.createElement("h2");
+            h2.textContent = objet.nom;
+            h2.className = "test";
+            h2.style = "color : pink";
+
+            let img = document.createElement("img");
+            img.src = "assets/img/" + objet.img;
+            img.alt = "Image de " + objet.nom;
+
+            MAIN.appendChild(h2);
+            MAIN.appendChild(img);
+            */
+
+            
+        });
 
 
     }catch(error){
-
+        // Si une erreur se produit (ex : fichier introuvable), on l'affiche dans la console
+        console.log("Erreur lors de la requête :", error.message);
     }
 }
 
