@@ -15,3 +15,18 @@ footer p {
     font-style: italic;
     font-size: 15px;
 }
+
+
+.myBtnColor{
+    background: linear-gradient(rgb(238, 49, 112), rgb(240, 137, 238));
+    color: aliceblue;
+    padding: 5px 50px;
+    font-weight: bolder;
+    border-radius: 10px;
+    border: 2px solid rgb(238, 49, 112);
+    box-shadow: rgba(0, 0, 0, 0.15) 2.4px 2.4px 3.2px;
+}
+
+.myh1{
+    color: rgb(238, 49, 112);
+}
