@@ -65,7 +65,7 @@ function card(objet){
     // Création du titre de l'objet (le nom)
     let h2 = document.createElement("h2");
     h2.textContent = objet.nom;
-    h2.className = "card-title";
+    h2.className = "myH2";
 
     // Création de la description
     let p = document.createElement("p");
@@ -76,13 +76,14 @@ function card(objet){
     let price = document.createElement("p");
     price.className = "card-text";
     let strongPrice = document.createElement("strong");
+    strongPrice.className = "myFont"
     //je pars en chiffre à virgule et je lui dit qu'il n'auras que 2 chiffres après la virgule
     strongPrice.textContent = parseFloat(objet.prix).toFixed(2) + " € TTC";
     
 
     //Création de la div footer
     let footer = document.createElement("div");
-    footer.className = "card-footer text-center"
+    footer.className = "myFooterCard text-center"
 
     // Création du bouton "Acheter"
     let btn = document.createElement("button");

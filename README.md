@@ -56,3 +56,14 @@
         ->crée une carte Bootstrap avec l’image, le nom, la description et le prix.
         ->ajoute un bouton "Acheter".
         ->ajoute à la fonction load() une boucle pour afficher chaque carte avec les objets.
+
+13 – Créez la structure HTML du panier
+	Dans votre fichier index.html, ajoutez ces éléments à la fin des vos articles avant le footer pour afficher le panier :
+		->Un titre <h2> avec l’id h2Cart (pour écrire le titre du panier)
+		->Une <div> avec l’id panier (c’est là que s’afficheront les articles ajoutés)
+		->Un paragraphe <p> avec l’id priceTotal (pour afficher le total du panier)
+
+14 – Ajouter une fonction pour mettre un article dans le panier
+	Dans votre fichier script.js, créez la fonction addToCart qui prendra un objet en paramètre qui :
+		->Enregistre l'objet dans le localStorage
+

@@ -1,3 +1,7 @@
+@font-face{
+    font-family: soopafre;
+    src : url("/assets/css/soopafre.ttf");
+}
 body{
     background-image: url("/assets/img/bg2.jpeg");
     background-size: cover;
@@ -29,4 +33,37 @@ footer p {
 
 .myh1{
     color: rgb(238, 49, 112);
+    font-family: soopafre;
+    font-size: 30px;
+}
+
+.myCart{
+    background-color: rgba(44, 13, 73, 0.95);
+    margin: 50px 6%;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: rgba(0, 0, 0, 0.15) 2.4px 2.4px 3.2px;
+    color: aliceblue;
+}
+
+.myH2{
+    color: rgb(238, 49, 112);
+    font-size: 18px;
+    font-family: soopafre;
+}
+
+.myFooterCard{
+    border-top: 2px solid rgb(240, 137, 238);
+    background-color: rgba(44, 13, 73, 0.693);
+    padding: 10px 5px;
+}
+
+.myFont{
+    color: aliceblue;
+}
+
+#h2Cart{
+    color: rgb(238, 49, 112);
+    font-size: 25px;
+    font-family: soopafre;
 }
