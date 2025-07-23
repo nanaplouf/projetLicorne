@@ -90,6 +90,11 @@ function card(objet){
     btn.className = "myBtnColor";
     btn.textContent = "Acheter";
 
+    // Quand on clique sur le bouton, on ajoute l'objet au panier
+    btn.addEventListener("click", function (){
+        addToCart(objet);
+    })
+
     // --------- Ajout des éléments entre eux (structure HTML) ----------
     // On ajoute la balise strong avec le prix à la balise p
     price.appendChild(strongPrice);
@@ -110,6 +115,44 @@ function card(objet){
     // On ajoute enfin la carte complète dans le conteneur principal de la page
     main.appendChild(mainDiv);
 }
+
+//----------------------Panier---------------------------------
+
+// Fonction pour ajouter un nouvel article au panier
+function addToCart(objet) {
+    // On récupère les articles du panier (ou un tableau vide si aucun panier)
+    let cart = getCart() || [];
+
+    // On ajoute le nouvel objet au panier
+    cart.push(objet);
+
+    // On enregistre à nouveau le panier (en JSON) dans le localStorage
+    localStorage.setItem("panier", JSON.stringify(cart));
+
+    console.log(getCart());
+    
+}
+
+// Fonction utilitaire pour lire le panier depuis le localStorage
+function getCart() {
+    const cart = localStorage.getItem("panier");
+
+    // Si quelque chose est trouvé, on le parse (convertit en tableau)
+    if (cart) {
+        return JSON.parse(cart);
+    } else {
+        // Sinon, on retourne un tableau vide
+        return [];
+    }
+}
+
+// Fonction pour afficher le panier
+// Récupèrer les éléments HTML où on veut afficher les infos
+
+//Si le panier est vide je note dans le h3 que "mon panier est vide" sinon j'écris "Votre panier contient :" : 
+
+//Boucle forEach pour afficher le panier dans la div
+
 
 
 // charge les objets
