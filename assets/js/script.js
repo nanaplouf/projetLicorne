@@ -147,13 +147,39 @@ function getCart() {
 }
 
 // Fonction pour afficher le panier
-// Récupèrer les éléments HTML où on veut afficher les infos
+
 
 //Si le panier est vide je note dans le h3 que "mon panier est vide" sinon j'écris "Votre panier contient :" : 
 
 //Boucle forEach pour afficher le panier dans la div
+function afficherPanier(){
 
+    // Récupèrer les éléments HTML où on veut afficher les infos
+    let titleCart = document.getElementById("titleCart");
+    let divCart = document.getElementById("panier");
+    let footerCart = document.getElementById("priceTotal");
+    
+    // On lit le panier depuis le localStorage
+    let cart = getCart() || [];
+    console.log(cart);
+
+    // Si le panier est vide
+    if(cart.length === 0){
+        titleCart.textContent = "Mon panier est vide";
+        footerCart.textContent = "0 € TTC";
+    }else{
+        titleCart.textContent = "Votre panier contient :"
+
+        // On parcourt chaque article du panier
+        cart.forEach(function (a){
+            console.log(a);
+        })
+    }
+
+}
 
 
 // charge les objets
 load();
+
+afficherPanier();
