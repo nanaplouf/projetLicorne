@@ -129,7 +129,7 @@ function addToCart(objet) {
     // On enregistre à nouveau le panier (en JSON) dans le localStorage
     localStorage.setItem("panier", JSON.stringify(cart));
 
-    console.log(getCart());
+    afficherPanier();
     
 }
 
@@ -161,20 +161,57 @@ function afficherPanier(){
     
     // On lit le panier depuis le localStorage
     let cart = getCart() || [];
-    console.log(cart);
+
+    // On vide le contenu HTML précédent pour éviter de tout afficher deux fois
+    panier.innerHTML = "";
 
     // Si le panier est vide
     if(cart.length === 0){
         titleCart.textContent = "Mon panier est vide";
         footerCart.textContent = "0 € TTC";
     }else{
-        titleCart.textContent = "Votre panier contient :"
+         // Si le panier contient des articles
+        titleCart.textContent = "Votre panier contient :";
+        // Variable pour calculer le prix total
+        let total = 0;
 
         // On parcourt chaque article du panier
-        cart.forEach(function (a){
-            console.log(a);
+        cart.forEach(function (objet){
+            // On ajoute le prix au total
+            total = total + objet.prix;
+            
+            // Crée un paragraphe pour l'article
+            let p = document.createElement("p");
+            p.textContent = objet.nom + " : " + objet.prix + " € TTC";
+
+            // Crée un bouton "Supprimer"
+            let btnDelete = document.createElement("button");
+            btnDelete.className = "myBtnDelete";
+            btnDelete.textContent = "Supprimer";
+
+            btnDelete.addEventListener("click", function(){
+                console.log(objet);
+                supprimerItem(objet);
+            })
+    
+            // On ajoute le bouton au paragraphe
+            p.appendChild(btnDelete);
+            
+            // On ajoute le paragraphe (avec le bouton) dans la div du panier
+            divCart.appendChild(p);
         })
+        console.log(total);
+        footerCart.textContent = total + " € TTC";
     }
+
+}
+
+function supprimerItem(objet){
+    // On récupère le panier actuel
+    let cart = getCart();
+
+    // On cherche l'objet à supprimer
+    
 
 }
 

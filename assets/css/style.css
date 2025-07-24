@@ -67,3 +67,13 @@ footer p {
     font-size: 25px;
     font-family: soopafre;
 }
+
+.myBtnDelete{
+    background: linear-gradient(rgb(1, 2, 41), rgb(44, 13, 73));
+    color: aliceblue;
+    padding: 5px 20px;
+    margin-left: 20px;
+    font-weight: bolder;
+    border-radius: 10px;
+    box-shadow: rgba(0, 0, 0, 0.15) 2.4px 2.4px 3.2px;
+}
