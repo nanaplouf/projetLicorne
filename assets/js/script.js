@@ -210,9 +210,22 @@ function supprimerItem(objet){
     // On récupère le panier actuel
     let cart = getCart();
 
-    // On cherche l'objet à supprimer
-    
+    // On cherche l'index de l'objet à supprimer avec son id
+    let i = cart.findIndex((index)=>{
+        return index.id === objet.id
+    })
 
+    // Si l'article existe, on le retire du tableau    
+    if(i !== -1){
+        // Supprime 1 élément à l’index i
+        cart.splice(i, 1);
+    }
+    
+    // On enregistre le panier mis à jour dans le localStorage
+    localStorage.setItem("panier", JSON.stringify(cart));
+
+    // On met à jour l'affichage à l’écran
+    afficherPanier();
 }
 
 
